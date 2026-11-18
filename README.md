@@ -1,18 +1,27 @@
-# dailytask
+==> Daily Task Application
 
-A new Flutter project.
+I have developed this Daily Task application using Flutter and Dart. The main purpose of this application is to help users manage their daily tasks easily.
 
-## Getting Started
+==> Features
 
-This project is a starting point for a Flutter application.
+- Users can add new tasks using a bottom sheet.
+- View all tasks on the home screen.
+- Mark tasks as completed or pending using a checkbox.
+- Delete tasks whenever required.
+- View task details by clicking on a task.
+- Show success and error messages.
+- Save tasks locally using SharedPreferences, so data remains available after restarting the app.
 
-A few resources to get you started if this is your first Flutter project:
+==> How the Application Works
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+I have used BLoC for state management. Whenever a user adds, deletes, or updates a task, an event is sent to the BLoC. BLoC handles that event, updates the task list, and saves the data in SharedPreferences.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-# dailyTask
+Whenever the data changes, the UI automatically updates according to the latest state.
+
+==> Technologies Used
+
+1) Flutter
+2) Dart
+3) BLoC State Management
+4) SharedPreferences
+5) Material UI
